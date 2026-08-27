@@ -507,8 +507,8 @@ function renderControles(){
 function initMap(){
   if(map) return;
   map=L.map('map',{zoomControl:true}).setView([-34.9011,-56.1645],12);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-    attribution:'© OpenStreetMap contributors',maxZoom:19,subdomains:'abcd'
+  L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png',{
+    attribution:'© <a href="https://stadiamaps.com/">Stadia Maps</a> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19,subdomains:'abcd'
   }).addTo(map);
   layerGroup=L.layerGroup().addTo(map);
   // Puntos de control layer
