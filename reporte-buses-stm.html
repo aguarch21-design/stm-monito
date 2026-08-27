@@ -507,8 +507,8 @@ function renderControles(){
 function initMap(){
   if(map) return;
   map=L.map('map',{zoomControl:true}).setView([-34.9011,-56.1645],12);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
-    attribution:'© OpenStreetMap © CARTO',maxZoom:19,subdomains:'abcd'
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution:'© OpenStreetMap contributors',maxZoom:19,subdomains:'abcd'
   }).addTo(map);
   layerGroup=L.layerGroup().addTo(map);
   // Puntos de control layer
